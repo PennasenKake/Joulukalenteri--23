@@ -1,0 +1,39 @@
+    
+    
+    /* Yleiset tyylit sivulle, kuten taustaväri ja luukkujen ulkoasu */
+    body {
+            background-color: rgb(235, 222, 222);   
+        /* 
+        aluksi mietin että laitanko taustakuvaksi mutta se jäi pois
+        background-image: url('https://cdn.pixabay.com/photo/2022/11/07/17/41/christmas-trees-7576912_1280.jpg'); 
+        */
+    }
+
+    /* Luukkujen ulkoasu */
+    .luukku {
+        width: 150px;
+        height: 150px;
+        border: 1px solid salmon;
+        text-align: center;
+        cursor: pointer;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: color 0.5s;
+        margin: 5px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px; 
+        line-height: 1.2; 
+    }
+
+    /* Luukun avautumisen tyylit */
+    .opened {
+        color: red !important;
+        background-color: red;
+    }
+
+    .luukku:hover {
+        color: red !important;
+    }
